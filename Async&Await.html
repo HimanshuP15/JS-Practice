@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript async / await</h2>
+
+<p>
+    "async and await make promises easier to write"<br>
+    async makes a function return a Promise<br>
+    await makes a function wait for a Promise<br>
+</p>
+
+<p id="demo"></p>
+
+<script>
+function myDisplayer(somevalue) {
+  document.getElementById("demo").innerHTML = somevalue;
+}
+
+async function myFunction() {return "Hello";}
+
+myFunction().then(
+  function(value) {myDisplayer(value);},
+  function(error) {myDisplayer(error);}
+);</script>
+
+</body>
+</html>

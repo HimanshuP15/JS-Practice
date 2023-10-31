@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Asynchronous Functions</h1>
+
+<p> Functions running in parallel with other functions are called asynchronous </p>
+
+<p>Wait 3 seconds for this page to change.</p>
+
+<h1 id="demo"></h1>
+
+<script>
+setTimeout(function() { myFunction("Welcome to SYMBIOTIC !!!"); }, 3000);
+
+function myFunction(anyvalue) {
+  document.getElementById("demo").innerHTML = anyvalue;
+}
+</script>
+
+</body>
+</html>

@@ -52,6 +52,10 @@ function avg(a,b){
 b1 = avg(10,12)
 console.log(b1);
 
+function myFunction(){
+    window.alert("button is clicked")
+}
+
 
 // for loop 
 
